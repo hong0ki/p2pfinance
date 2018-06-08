@@ -226,7 +226,7 @@
                         $.ajax({
                             type: "post",
                             dataType: "json",
-                            url: path.base + "/user!verify1.action", //发送请求地址
+                            url: "/p2pfinance/user/register", //发送请求地址
                             data: {
                                 verifyStr: strName,
                                 verifyVal: strVal

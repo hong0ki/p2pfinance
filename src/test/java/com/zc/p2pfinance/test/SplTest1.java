@@ -25,5 +25,9 @@ public class SplTest1 {
 		List<User> list = userService.find();
 		System.out.print(list);
 	}
+	@Test
+	public void gett() {
+		
+	}
 
 }
