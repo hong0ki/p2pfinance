@@ -2,14 +2,17 @@ package com.zc.p2pfinance.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-@RequestMapping("/hehe")
+@RequestMapping("/user")
 @Controller
 public class P2PAction {
 
 	@RequestMapping("/register")
-	public String register() {
+	@ResponseBody
+	public Object register(String string) {
+		System.out.println(string);
 		
-		return "register";
+		return null;
 	}
 }

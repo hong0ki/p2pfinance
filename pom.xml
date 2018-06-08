@@ -109,7 +109,7 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!--  <plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
@@ -118,7 +118,7 @@
 					<path>/p2pfinance</path>
 					<charset>utf8</charset>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		
         <plugin>  
             <groupId>org.apache.maven.plugins</groupId>  
