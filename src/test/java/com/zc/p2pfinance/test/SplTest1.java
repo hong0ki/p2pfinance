@@ -17,7 +17,7 @@ import com.zc.p2pfinance.service.UserService;
  * @author: Qiu
  */
 public class SplTest1 {
-	
+	/*
 	@Test
 	public void getSession() {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -25,5 +25,5 @@ public class SplTest1 {
 		List<User> list = userService.find();
 		System.out.print(list);
 	}
-
+*/
 }
