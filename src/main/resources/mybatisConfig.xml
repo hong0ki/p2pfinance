@@ -8,7 +8,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.zckj.p2p.po" />
+        <package name="com.zc.p2pfinance.po" />
     </typeAliases>
 
     <!--分页插件

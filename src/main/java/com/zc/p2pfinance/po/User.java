@@ -1,4 +1,4 @@
-package com.zckj.p2p.po;
+package com.zc.p2pfinance.po;
 
 /**
  * 
