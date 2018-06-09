@@ -68,7 +68,7 @@
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="configLocation" value="classpath:mybatisConfig.xml"></property>
 	    
-	    <property name="mapperLocations" value="classpath:com/zc/p2pfinance/mapper/mapper/UserMapper.xml"></property>
+	    <property name="mapperLocations" value="classpath:com/zc/p2pfinance/mapper/mapper/*.xml"></property>
 		<property name="typeAliasesPackage" value="com.zc.p2pfinance.po"></property>
 	</bean>
 	

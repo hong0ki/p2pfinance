@@ -9,7 +9,7 @@ package com.zc.p2pfinance.po;
  */
 public class User {
 	/** 用户id */
-	private Integer user_id;
+	private int user_id;
 	/** 用户名 */
 	private String username;
 	/** 登录密码 */

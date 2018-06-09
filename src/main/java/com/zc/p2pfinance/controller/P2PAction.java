@@ -19,7 +19,6 @@ public class P2PAction {
 	@RequestMapping("/register")
 	@ResponseBody
 	public ResultMessage register(String verifyStr,String verifyVal) {
-		System.out.println(verifyVal);
 		
 		System.out.println(userService.find());
 		//登录标志，操作结果，反馈信息，结果集
