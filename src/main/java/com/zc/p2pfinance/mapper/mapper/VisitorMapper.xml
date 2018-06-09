@@ -18,6 +18,10 @@
 		select * from xw_table
 	</select>   
 	
+	<select id="getNewsById" parameterType="Integer" resultMap="NewsMap">
+		select * from xw_table where news_id=#{id}
+	</select> 
+	
 	<select id="getName" resultType="String">
 		select news_title from xw_table
 	</select> 

@@ -26,4 +26,12 @@ public interface VisitorMapper {
 	 */
 	List<String> getName();
 
+	/**@Title: getNewsById 
+	 * @Description: TODO(这里用一句话描述这个方法的作用)
+	 * @param id
+	 * @return
+	 * @return News
+	 */
+	News getNewsById(int id);
+
 }

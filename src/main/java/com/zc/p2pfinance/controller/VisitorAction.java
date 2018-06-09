@@ -28,11 +28,20 @@ public class VisitorAction {
 	@Autowired
 	VisitorService visitorService;
 	
-	@RequestMapping("/news")
+	@RequestMapping("/newsList")
 	@ResponseBody
 	public List<News> getAllNews(){
 		System.out.println("开始获取新闻……");
 		return visitorService.getAllNews();
+		
+	}
+	
+	@RequestMapping("/news")
+	@ResponseBody
+	public News getNewsById(String newsId){
+		System.out.println("新闻id"+newsId);
+		int nId=Integer.parseInt(newsId);
+		return visitorService.getNewsByName(nId);
 		
 	}
 

@@ -26,4 +26,11 @@ public interface VisitorService {
 	 */
 	List<String> getName();
 
+	/**@Title: getNewsByName 
+	 * @Description: TODO(这里用一句话描述这个方法的作用)
+	 * @return
+	 * @return News
+	 */
+	News getNewsByName(int id);
+
 }

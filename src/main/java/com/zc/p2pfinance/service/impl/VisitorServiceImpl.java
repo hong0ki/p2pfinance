@@ -48,4 +48,14 @@ public class VisitorServiceImpl implements VisitorService{
 		return visitorMapper.getName();
 	}
 
+	/* Title: getNewsByName
+	 * @Description: TODO
+	 * @see com.zc.p2pfinance.service.VisitorService#getNewsByName()
+	 */
+	@Override
+	public News getNewsByName(int id) {
+		
+		return visitorMapper.getNewsById(id);
+	}
+
 }
