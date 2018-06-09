@@ -19,4 +19,11 @@ public interface VisitorService {
 	
 	List<News> getAllNews();
 
+	/**@Title: getName 
+	 * @Description: TODO(这里用一句话描述这个方法的作用)
+	 * @return
+	 * @return List<String>
+	 */
+	List<String> getName();
+
 }

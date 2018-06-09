@@ -44,6 +44,8 @@ public class SplTest1 {
 			System.out.println(list.get(i));
 			
 		}
+		List<String> string=visitorService.getName();
+		System.out.println(string);
 	}
 
 }

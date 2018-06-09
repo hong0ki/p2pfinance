@@ -9,6 +9,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.zc.p2pfinance.mapper.VisitorMapper;
@@ -24,7 +25,7 @@ import com.zc.p2pfinance.service.VisitorService;
 @Service("visitorServiceImpl")
 public class VisitorServiceImpl implements VisitorService{
 	
-	@Resource
+	@Autowired
 	private VisitorMapper visitorMapper;
 
 	/* Title: getAllNews
@@ -35,6 +36,16 @@ public class VisitorServiceImpl implements VisitorService{
 	public List<News> getAllNews() {
 		System.out.println("进入mapper……");
 		return visitorMapper.getAllNews();
+	}
+
+	/* Title: getName
+	 * @Description: TODO
+	 * @see com.zc.p2pfinance.service.VisitorService#getName()
+	 */
+	@Override
+	public List<String> getName() {
+		
+		return visitorMapper.getName();
 	}
 
 }
