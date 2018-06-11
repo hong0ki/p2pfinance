@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.p2pfinance.mapper.VisitorMapper">
+
+	<resultMap type="com.zc.p2pfinance.po.News" id="NewsMap">  
+         
+        <id column="news_id" property="news_id"/>  
+        <result column="news_title" property="news_title"/>  
+        <result column="news_context" property="news_context"/>  
+        <result column="news_pic" property="news_pic"/>  
+        <result column="news_type" property="news_type"/>    
+        <result column="news_time" property="news_time"/>      
+    </resultMap>  
+	
+	<select id="getAllNews" resultMap="NewsMap">
+		select * from xw_table
+	</select>   
+	
+	<select id="getNewsById" parameterType="Integer" resultMap="NewsMap">
+		select * from xw_table where news_id=#{id}
+	</select> 
+	
+	<select id="getName" resultType="String">
+		select news_title from xw_table
+	</select> 
+	
+</mapper>
